@@ -25,4 +25,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Executar testes
-        run: pytest -q
+        run: pytest --import-mode=importlib -q
